@@ -137,7 +137,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/placeholder.svg?height=1080&width=1920");
+  background-color: var(--color-primary);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -381,6 +381,9 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 1 !important; /* Asegura opacidad total */
+  visibility: visible !important; /* Asegura visibilidad */
+  display: block; /* Quita espacios extra abajo */
   transition: var(--transition);
 }
 
